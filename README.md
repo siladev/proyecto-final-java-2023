@@ -4,7 +4,6 @@
 
 - Acosta Silvina Fernanda
 - Gonzalez Armando Jose Alejandro
-- Mortola Ana Florencia 
 - Rozas Gonzalo
 
 ### Introducción
