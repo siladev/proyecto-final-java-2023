@@ -1,0 +1,13 @@
+ID-Apostador;Nombre-Apostador;ID-Equipo1;Gana1;Empate;Gana2;ID-Equipo2
+1;Gonzalo;1;;X;;2
+1;Gonzalo;3;X;;;4
+1;Gonzalo;1;X;;;4
+1;Gonzalo;2;;X;;3
+2;Jose;1;;;x;2
+2;Jose;3;;x;;4
+2;Jose;1;x;;;4
+2;Jose;2;;x;;3
+3;Silvina;1;;;x;2
+3;Silvina;3;;X;;4
+3;Silvina;1;;x;;4
+3;Silvina;2;;x;;3
