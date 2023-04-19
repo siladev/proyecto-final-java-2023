@@ -1,5 +1,6 @@
 package com.proyecto.clases;
 
+// CLASE PROGRAMADA POR: Acosta Silvina
 public class Partido {
     // Atributos de la clase
     private Equipo equipo1;
@@ -7,8 +8,12 @@ public class Partido {
     private int golesEquipo1;
     private int golesEquipo2;
 
-    // Método Constructor
-    public Partido(Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
+
+    // Método Constructor vacío
+    public Partido() { }
+
+    // Método Constructor con parámetros
+    public Partido(int ronda, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
         this.golesEquipo1 = golesEquipo1;
@@ -17,25 +22,27 @@ public class Partido {
 
     // Este método devuelve el resultado del partido para un equipo dado
     public ResultadoEnum resultado(Equipo equipo){
-        if (equipo==equipo1){
-            if (golesEquipo1==golesEquipo2){
-                return ResultadoEnum.empate;
-            }else if(golesEquipo1>golesEquipo2){
-                return ResultadoEnum.ganador;
-            }else{
-                return ResultadoEnum.perdedor;
-            }
-        } else if (equipo==equipo2) {
-            if (golesEquipo2==golesEquipo1){
-                return ResultadoEnum.empate;
-            }else if(golesEquipo2>golesEquipo1){
-                return ResultadoEnum.ganador;
-            }else{
-                return ResultadoEnum.perdedor;
-            }
-        }else{
-            return null;
+        // RESULTADO: EMPATE
+        if (golesEquipo1==golesEquipo2) {
+            return ResultadoEnum.empate;
         }
+        // RESULTADO EQUIPO 1
+        if(equipo.equals(equipo1)) {
+            if (golesEquipo1 > golesEquipo2) {
+                return ResultadoEnum.ganador;
+            } else {
+                return ResultadoEnum.perdedor;
+            }
+        }
+        // RESULTADO EQUIPO 2
+        if(equipo.equals(equipo2)) {
+            if (golesEquipo2 > golesEquipo1) {
+                return ResultadoEnum.ganador;
+            } else {
+                return ResultadoEnum.perdedor;
+            }
+        }
+        return null;
     }
 
     //Métodos Getters y Setters
@@ -60,7 +67,7 @@ public class Partido {
     public int getGolesEquipo2() {
         return golesEquipo2;
     }
-    public void setGolesEquipo2(int golesEquipo2) {
+    public void setGolesEquipo2( int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
 
