@@ -36,6 +36,9 @@ El programa debe:
 - Imprimir por pantalla el nombre de cada persona, el puntaje total y la cantidad de pronósticos acertados.
 - Implementar un test (al menos uno, pero se recomienda hacer más) que calcule el puntaje de una persona en 2 (dos) rondas consecutivas.
 
+![Salida por consola 1](img/Salida-Consola-E2-01.JPG)
+![Salida por consola 2](img/Salida-Consola-E2-02.JPG)
+
 ### Etapa 3
 En esta entrega se deben poder leer los pronósticos desde una base de datos MySQL. Por otro lado, debe poder ser configurable la cantidad de puntos que se otorgan cuando se acierta un resultado (ganar, perder, empatar).
 Finalmente, se agregan 2(dos) reglas para la asignación de puntajes de los participantes:
