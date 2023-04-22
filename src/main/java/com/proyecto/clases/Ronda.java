@@ -1,6 +1,7 @@
 package com.proyecto.clases;
 
 // CLASE PROGRAMADA POR: Gonzalez Armando Jose Alejandro
+
 public class Ronda {
     // Atributos de la clase
     private String nroRonda;
