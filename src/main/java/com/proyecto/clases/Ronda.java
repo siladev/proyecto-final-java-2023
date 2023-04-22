@@ -3,7 +3,7 @@ package com.proyecto.clases;
 // CLASE PROGRAMADA POR: Gonzalez Armando Jose Alejandro
 public class Ronda {
     // Atributos de la clase
-    private String nro;
+    private String nroRonda;
     private Partido[] partidos;
     private int cantPartidos;
 
@@ -11,19 +11,22 @@ public class Ronda {
     public Ronda() { }
 
     // Método Constructor con parámetros
-    public Ronda(String nro, Partido[] partidos, int cantPartidos) {
-        this.nro = nro;
+
+    public Ronda(String nroRonda) {
+        this.nroRonda = nroRonda;
+    }
+    
+    public Ronda(String nroRonda, Partido[] partidos, int cantPartidos) {
+        this.nroRonda = nroRonda;
         this.partidos = partidos;
         this.cantPartidos = cantPartidos;
     }
 
     //Métodos getter y setter
     public String getNro() {
-        return nro;
+        return nroRonda;
     }
-    public void setNro(String nro) {
-        this.nro = nro;
-    }
+    public void setNro(String nroRonda) { this.nroRonda = nroRonda; }
     public Partido[] getPartidos() {
         return partidos;
     }

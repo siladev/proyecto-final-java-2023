@@ -21,7 +21,11 @@ public class Apostador implements Comparable<Apostador>{
     //Método para obtener los puntos del apostador
     public int totalPuntos() {
         int cantidadPuntos = 0;
-        for(Pronostico pronostico : pronosticos) { cantidadPuntos+= pronostico.puntosPronosticos();}
+        if (pronosticos != null) {
+            for (Pronostico pronostico : pronosticos) {
+                cantidadPuntos += pronostico.puntosPronosticos();
+            }
+        }
         return cantidadPuntos;
     }
 

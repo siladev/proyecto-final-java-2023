@@ -7,13 +7,15 @@ public class Partido {
     private Equipo equipo2;
     private int golesEquipo1;
     private int golesEquipo2;
+    private int nroRonda;
 
 
     // Método Constructor vacío
     public Partido() { }
 
     // Método Constructor con parámetros
-    public Partido(int ronda, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
+    public Partido(int nroRonda, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
+        this.nroRonda = nroRonda;
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
         this.golesEquipo1 = golesEquipo1;
@@ -26,7 +28,7 @@ public class Partido {
         if (golesEquipo1==golesEquipo2) {
             return ResultadoEnum.empate;
         }
-        // RESULTADO EQUIPO 1
+        // Resultado Equipo 1
         if(equipo.equals(equipo1)) {
             if (golesEquipo1 > golesEquipo2) {
                 return ResultadoEnum.ganador;
@@ -34,7 +36,7 @@ public class Partido {
                 return ResultadoEnum.perdedor;
             }
         }
-        // RESULTADO EQUIPO 2
+        // Resultado Equipo 2
         if(equipo.equals(equipo2)) {
             if (golesEquipo2 > golesEquipo1) {
                 return ResultadoEnum.ganador;
