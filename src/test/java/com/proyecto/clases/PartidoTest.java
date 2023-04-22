@@ -3,7 +3,7 @@ package com.proyecto.clases;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-// CLASE PROGRAMADA POR: Gonzalez Armando Jose Alejandro
+// CLASE PROGRAMADA POR: Gonzalez José
 public class PartidoTest {
     @Test
     public void probarResultadoGanaEquipo1(){
