@@ -1,6 +1,7 @@
 package com.proyecto.clases;
 
 // CLASE PROGRAMADA POR: Acosta Silvina
+
 public class Partido {
     // Atributos de la clase
     private Equipo equipo1;

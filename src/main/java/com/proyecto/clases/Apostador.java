@@ -1,6 +1,7 @@
 package com.proyecto.clases;
 
 // CLASE PROGRAMADA POR: Acosta Silvina
+
 public class Apostador implements Comparable<Apostador>{
     // Atributos de la clase
     private String nombre;
