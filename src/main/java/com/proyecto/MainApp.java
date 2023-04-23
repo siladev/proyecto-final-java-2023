@@ -189,8 +189,8 @@ public class MainApp {
     private static Pronostico[] cargarPronostico(String archivoPronosticos, Ronda[] rondas, List<Apostador> apostadores) {
         List<String> pronosticos = new ArrayList<String>();
         try {
-            pronosticos = Files.readAllLines(Paths.get(archivoPronosticos), Charset.forName("ISO-8859-1")); //lee el archivo de pronósticos y lo almacena en una lista
-            pronosticos.remove(0); //remueve la primera línea que es la que tiene los títulos
+            pronosticos = Files.readAllLines(Paths.get(archivoPronosticos), Charset.forName("ISO-8859-1")); //Lee el archivo pronósticos.csv y lo almacena en una lista
+            pronosticos.remove(0); //Se elimina el primer elemento de la lista, que contiene los encabezados del archivo.
         } catch (IOException e) {
             System.out.println("Error al leer el archivo");
             e.printStackTrace();
