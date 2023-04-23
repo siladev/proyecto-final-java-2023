@@ -10,11 +10,14 @@ public class Partido {
     private int golesEquipo2;
     private int nroRonda;
 
-
     // Método Constructor vacío
     public Partido() { }
 
     // Método Constructor con parámetros
+    public Partido( Equipo equipo1, Equipo equipo2) {
+        this.equipo1 = equipo1;
+        this.equipo2 = equipo2;
+    }
     public Partido(int nroRonda, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2) {
         this.nroRonda = nroRonda;
         this.equipo1 = equipo1;
@@ -22,7 +25,6 @@ public class Partido {
         this.golesEquipo1 = golesEquipo1;
         this.golesEquipo2 = golesEquipo2;
     }
-
     // Este método devuelve el resultado del partido para un equipo dado
     public ResultadoEnum resultado(Equipo equipo){
         // RESULTADO: EMPATE
@@ -30,7 +32,7 @@ public class Partido {
             return ResultadoEnum.empate;
         }
         // Resultado Equipo 1
-        if(equipo.equals(equipo1)) {
+        if(equipo1 != null && equipo1.equals(equipo)) {
             if (golesEquipo1 > golesEquipo2) {
                 return ResultadoEnum.ganador;
             } else {
@@ -38,7 +40,7 @@ public class Partido {
             }
         }
         // Resultado Equipo 2
-        if(equipo.equals(equipo2)) {
+        if(equipo2 != null && equipo2.equals(equipo)) {
             if (golesEquipo2 > golesEquipo1) {
                 return ResultadoEnum.ganador;
             } else {
@@ -73,5 +75,4 @@ public class Partido {
     public void setGolesEquipo2( int golesEquipo2) {
         this.golesEquipo2 = golesEquipo2;
     }
-
 }

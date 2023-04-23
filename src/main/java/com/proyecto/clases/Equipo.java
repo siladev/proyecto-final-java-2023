@@ -10,10 +10,14 @@ public class Equipo {
     public Equipo() { }
 
     // Método Constructor con parámetros
+    public Equipo(String nombre) {
+        this.nombre = nombre;
+    }
     public Equipo(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
+
     //Métodos Getters y Setters
     public String getNombre() {
         return nombre;

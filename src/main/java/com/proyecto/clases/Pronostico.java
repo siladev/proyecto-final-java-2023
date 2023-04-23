@@ -22,7 +22,7 @@ public class Pronostico {
     // Método para los puntos que tiene el pronóstico
     public int puntosPronosticos() {
         ResultadoEnum pronosticoPartido = this.partido.resultado(this.equipo);
-        if (this.resultado.equals(pronosticoPartido)) {
+        if (this.resultado != null && this.resultado.equals(pronosticoPartido)) {
             return 1;
         } else {
             return 0;
