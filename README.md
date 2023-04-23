@@ -26,6 +26,7 @@ El programa debe:
 - Tomar como argumento 2 rutas a cada archivo que se necesita
 - Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
 - Debe imprimir por pantalla el puntaje de la persona
+
 ![Salida por consola 1](img/Salida-Consola-E1-01.JPG)
 
 ### Etapa 2
