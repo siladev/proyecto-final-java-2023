@@ -27,6 +27,25 @@ El programa debe:
 - Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
 - Debe imprimir por pantalla el puntaje de la persona
 
+####Ejemplo
+Archivo **resultados.csv**
+###Tables
+Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
+------------- |:-------------: |:-------------: |------------- |
+Argentina  |  1  |	2  |  Arabia Saudita
+Polonia  |	0  |  0  |  México
+
+Archivo **pronosticos.csv**
+
+Equipo 1  |	Gana 1  |  Empata  |  Gana 2  |  Equipo 2
+------------- |:-------------: |:-------------: |:-------------: |------------- |
+Argentina  |  X	 |     |     |  Arabia Saudita
+Polonia  |     |  X  |     |  México
+
+Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser: Puntaje = 1
+
+### Salida por consola Etapa 1
+
 ![Salida por consola 1](img/Salida-Consola-E1-01.JPG)
 
 ### Etapa 2
@@ -37,6 +56,40 @@ El programa debe:
 - Utilizar la herramienta Maven y su estructura de proyecto. La misma debe estar implementada en el repositorio de GIT escogido.
 - Imprimir por pantalla el nombre de cada persona, el puntaje total y la cantidad de pronósticos acertados.
 - Implementar un test (al menos uno, pero se recomienda hacer más) que calcule el puntaje de una persona en 2 (dos) rondas consecutivas.
+
+####Ejemplo
+Archivo **resultados.csv**
+###Tables
+Ronda |  Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
+------------- |------------- |:-------------: |:-------------: |------------- |
+1  |  Argentina  |  1  |	2  |  Arabia Saudita
+1  |  Polonia  |	0  |  0  |  México
+1  |  Argentina  |	2  |  0  |  México
+1  |  Arabia Saudita  |	0  |  2  |  Polonia
+
+Archivo **pronosticos.csv**
+
+Participante |  Equipo 1  |	Gana 1  |  Empata  |  Gana 2  |  Equipo 2
+------------- |:-------------: |:-------------: |:-------------: |------------- |
+Gonzalo  |  Argentina  |  	 |   X  |     |  Arabia Saudita
+Gonzalo  |  Polonia  |  X  |    |     |  México
+Gonzalo  |  Argentina  |  X  |     |     |  México
+Gonzalo |  Arabia Saudita  |     |  X  |     |  Polonia
+José  |  Argentina  |     |     |  X  |  Arabia Saudita
+José  |  Polonia  |     |  X |    |  México
+José  |  Argentina  |  X  |     |     |  México
+José  |  Arabia Saudita  |     |  X  |     |  Polonia
+Silvina  |  Argentina  |     |     |  X  |  Arabia Saudita
+Silvina  |  Polonia  |     |  X |    |  México
+Silvina  |  Argentina  |     |  X  |     |  México
+Silvina  |  Arabia Saudita  |     |  X  |     |  Polonia
+
+Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser:
+José: 3
+Silvina: 2
+Gonzalo: 1
+
+### Salida por consola Etapa 2
 
 ![Salida por consola 1](img/Salida-Consola-E2-01.JPG)
 ![Salida por consola 2](img/Salida-Consola-E2-02.JPG)
