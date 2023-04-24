@@ -125,10 +125,10 @@ public class MainEtapa1 {
                 if(pronosticos.get(i).split(",")[3].isEmpty()) {
                     resultadoPronostico = ResultadoEnum.empate; // Asigna el resultado del pronóstico en empate
                 } else {
-                    resultadoPronostico = ResultadoEnum.perdedor; // Asigna el resultado del pronóstico en perdedor
+                    resultadoPronostico = ResultadoEnum.ganador; // Asigna el resultado del pronóstico en perdedor
                 }
             } else {
-                resultadoPronostico = ResultadoEnum.ganador; // Asigna el resultado del pronóstico en ganador
+                resultadoPronostico = ResultadoEnum.perdedor; // Asigna el resultado del pronóstico en ganador
             }
             // Se asignan los valores correspondientes al objeto Pronostico
             pronostico.setPartido(partidosRonda[i]);
