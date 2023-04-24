@@ -27,8 +27,10 @@ El programa debe:
 - Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
 - Debe imprimir por pantalla el puntaje de la persona
 
-####Ejemplo
+###Ejemplo
+
 Archivo **resultados.csv**
+
 ###Tables
 Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
 ------------- |:-------------: |:-------------: |------------- |
@@ -57,8 +59,10 @@ El programa debe:
 - Imprimir por pantalla el nombre de cada persona, el puntaje total y la cantidad de pronósticos acertados.
 - Implementar un test (al menos uno, pero se recomienda hacer más) que calcule el puntaje de una persona en 2 (dos) rondas consecutivas.
 
-####Ejemplo
+###Ejemplo
+
 Archivo **resultados.csv**
+
 ###Tables
 Ronda |  Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
 ------------- |------------- |:-------------: |:-------------: |------------- |
@@ -85,8 +89,8 @@ Silvina  |  Argentina  |     |  X  |     |  México
 Silvina  |  Arabia Saudita  |     |  X  |     |  Polonia
 
 Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser:
-José: 3
-Silvina: 2
+José: 3 -
+Silvina: 2 -
 Gonzalo: 1
 
 ### Salida por consola Etapa 2
