@@ -27,11 +27,11 @@ El programa debe:
 - Al leer las líneas de los archivos debe instanciar objetos de las clases propuestas
 - Debe imprimir por pantalla el puntaje de la persona
 
-###Ejemplo
+### Ejemplo
 
 Archivo **resultados.csv**
 
-###Tables
+### Tables
 Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
 ------------- |:-------------: |:-------------: |------------- |
 Argentina  |  1  |	2  |  Arabia Saudita
@@ -59,11 +59,11 @@ El programa debe:
 - Imprimir por pantalla el nombre de cada persona, el puntaje total y la cantidad de pronósticos acertados.
 - Implementar un test (al menos uno, pero se recomienda hacer más) que calcule el puntaje de una persona en 2 (dos) rondas consecutivas.
 
-###Ejemplo
+### Ejemplo
 
 Archivo **resultados.csv**
 
-###Tables
+### Tables
 Ronda |  Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
 ------------- |------------- |:-------------: |:-------------: |------------- |
 1  |  Argentina  |  1  |	2  |  Arabia Saudita
@@ -74,7 +74,7 @@ Ronda |  Equipo 1  | Cant. goles 1  |  Cant. goles 2  |  Equipo 2
 Archivo **pronosticos.csv**
 
 Participante |  Equipo 1  |	Gana 1  |  Empata  |  Gana 2  |  Equipo 2
-------------- |:-------------: |:-------------: |:-------------: |------------- |
+------------- | ------------- |:-------------: |:-------------: |:-------------: |------------- |
 Gonzalo  |  Argentina  |  	 |   X  |     |  Arabia Saudita
 Gonzalo  |  Polonia  |  X  |    |     |  México
 Gonzalo  |  Argentina  |  X  |     |     |  México
@@ -87,6 +87,7 @@ Silvina  |  Argentina  |     |     |  X  |  Arabia Saudita
 Silvina  |  Polonia  |     |  X |    |  México
 Silvina  |  Argentina  |     |  X  |     |  México
 Silvina  |  Arabia Saudita  |     |  X  |     |  Polonia
+
 
 Leyendo los 2 (dos) archivos, y suponiendo que cada resultado acertado suma 1 (un) punto, la salida del programa debe ser:
 José: 3 -
