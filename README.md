@@ -110,4 +110,4 @@ En esta entrega, el programa debe:
 - Estar actualizado en el repositorio de Git.
 - Recibir como argumento un archivo con los resultados y otro con configuración, por ejemplo: conexión a la DB, puntaje por partido ganado, puntos extra, etc.
 
-![Salida por consola 3](img/Salida-Consola-E3-02.JPG)
+![Salida por consola 3](img/Salida-Consola-E3-01.JPG)
